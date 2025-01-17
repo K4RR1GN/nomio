@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div class="imgBX">
+                <img src="zurag1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2><br></br>Хэрэв аз жаргал хүн байсан бол тэр нь чи л байх байсан. </h2>
+               
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBX">
+                <img src="zurag2.webp" alt="">
+            </div>
+            <div class="content">
+                <h2><br></br>Чиний инээмсэглэл миний бүх асуудлыг мартагнуулдаг. <br>Энэ үнэхээр ид шид шиг.</h2>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBX">
+                <img src="zurag3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2><br></br>Чи үнэхээр халамжтай, бусдын талаар үргэлж боддог чинь намайг бишрүүлдэг.</h2>
+                
+            </div>
+        </div>
+    </div>
+    <a href="3.html"> <button class="btn">Энэ дээр дарна уу!</button></a>
+    <style>
+        /* Mengimpor font Poppins */
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@1003200 200;300;400; 500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: "Poppins", sans-serif;
+}
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(2backround.avif);      
+}
+
+.container {
+position: relative;
+width: 1100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 3px;
+}
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #e94d58;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0. 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 420px;
+}
+
+.container .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0. 0.5);
+}
+
+.container .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    margin-top: 600px;
+    margin-left:-660px ;
+    width: 220px;
+    color: #e94d58;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #e94d58;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+    </style>
+    </body>
+</html>
